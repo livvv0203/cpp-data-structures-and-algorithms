@@ -51,6 +51,20 @@ bool Search(BstNode *root, int data)
         return Search(root->right, data);
 }
 
+int FinMin(BstNode* root) {
+
+    if (root == NULL) {
+        cout << "Error: Tree is empty!\n";
+        return -1;
+    }
+    
+    while(root -> left != NULL) {
+        // If has left child, move the pointer to the left child
+        root = root -> left; 
+    } 
+    return root -> data;
+}
+
 int main()
 {
 
@@ -59,3 +73,16 @@ int main()
     root = Insert(root, 10);
     root = Insert(root, 20);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
