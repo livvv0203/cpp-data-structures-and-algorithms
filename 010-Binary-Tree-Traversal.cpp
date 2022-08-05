@@ -19,7 +19,7 @@ using namespace std;
 
 struct Node {
     char data;
-    Node *left;
+    Node *left; 
     Node *right;
 }; 
 
@@ -44,14 +44,17 @@ void LevelOrder(Node* root) {
         if (current -> right != NULL) Q.push(current -> right);
         Q.pop(); // removing element at front
     } 
-}
+};
 
 int main() { 
 
     // To test Level Order function
 
-
 }
+
+
+
+
 
 
 
