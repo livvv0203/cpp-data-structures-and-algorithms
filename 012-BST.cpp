@@ -44,7 +44,6 @@ bool IsBinarySearchTree(Node* root, int minValue, int maxValue) {
         && root -> data < maxValue
         && IsBinarySearchTree(root ->left, minValue, root -> data)
         && IsBinarySearchTree(root -> right, root -> data, maxValue))
-
         return true; 
     else
         return false;
